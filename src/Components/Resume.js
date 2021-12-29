@@ -31,16 +31,23 @@ class Resume extends Component {
     const work = this.props.data.work.map(function (work) {
       const workpic = "images/" + work.image;
       return (
-        <div key={work.company}>
+        <div key={work.company} style={{ marginTop: "10%" }}>
           <h3>{work.company}</h3>
           <p className="info">
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>
           </p>
           <p>{work.description}</p>
-          {work.image &&
-            <img src={workpic}></img>
+          {work.title === "IBM - IoT Center Munich" &&
+            <p>The exhibit is now live at the German Museum in Nuremberg. <a href="https://www.deutsches-museum.de/nuernberg" target="_blank" rel="noreferrer">https://www.deutsches-museum.de/nuernberg</a></p>
           }
+          {work.image &&
+            <img src={workpic} alt={work.title}></img>
+          }
+          {!work.last &&
+            <hr />
+          }
+
 
         </div>
       );
