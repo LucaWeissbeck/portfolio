@@ -14,7 +14,7 @@ class About extends Component {
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
     const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
+    const resumeDownload = "resources/" + this.props.data.resumedownload;
 
     return (
       <section id="about">
@@ -40,7 +40,7 @@ class About extends Component {
                     <span>
                       {street}
                       <br />
-                      {city} {state}, {zip}
+                      {city}
                     </span>
                     <br />
                     <span>{phone}</span>

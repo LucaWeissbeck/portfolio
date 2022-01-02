@@ -47,12 +47,6 @@ class Header extends Component {
                 Works
               </a>
             </li>
-
-            <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
-              </a>
-            </li>
           </ul>
         </nav>
 
@@ -62,14 +56,11 @@ class Header extends Component {
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3 style={{opacity: "1.0", fontWeight: "600", fontSize: "20px"}}>{description}.</h3>
+              <h3 style={{ opacity: "1.0", fontWeight: "600", fontSize: "20px" }}>{description}.</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
                 <a href={github} className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
                 </a>

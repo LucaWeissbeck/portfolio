@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Luca Alexander Weissbeck",
-    "description": "I am a software engineering student with IBM and will have completed my studies in September 2022",
+    "description": "I am a software engineering student at IBM and will have completed my studies in September 2022",
     "image": "profilepic.png",
     "bio": "My studies involve recurring internships at my corporate partner IBM. While this might seem uncommon, it is a well known concept in Germany. During my studies a practical work experience phase alternates with a university phase every 3-4 months. Due to my free choice of internship placement I am able to gain insights into different business units and work on real-world client facing projects. ",
     "contactmessage": "Feel free to contact me on the options listed below.",
@@ -10,11 +10,10 @@
     "github": "https://github.com/LucaWeissbeck",
     "project": "https://github.com/nordicgiant2/react-nice-resume",
     "address": {
-      "street": "Wolffstrasse 1",
-      "city": "70199, Stuttgart"
+      "city": "Stuttgart, Germany"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "resumedownload": "Website_CV.pdf",
     "social": [{
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/luca-weissbeck/",
@@ -97,6 +96,10 @@
       },
       {
         "name": "SQL",
+        "level": "50%"
+      },
+      {
+        "name": "Docker",
         "level": "50%"
       }
     ]
