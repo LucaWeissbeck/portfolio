@@ -16,6 +16,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "react-zmage": "^0.8.5-beta.36",
+    "serve": "^13.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -26,8 +27,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
