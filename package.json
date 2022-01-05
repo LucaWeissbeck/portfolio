@@ -13,7 +13,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-ga": "^3.3.0",
-    "react-reveal": "^1.2.2",
+    "react-reveal": "1.2.2-beta.1",
     "react-scripts": "4.0.3",
     "react-zmage": "^0.8.5-beta.36",
     "serve": "^13.0.2",
