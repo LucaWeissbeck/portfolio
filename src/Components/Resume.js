@@ -47,7 +47,7 @@ class Resume extends Component {
           }
           <p>{work.description}</p>
           {work.title === "IBM - IoT Center Munich" &&
-            <p>The exhibit is now live at the German Museum in Nuremberg. <a href="https://www.deutsches-museum.de/nuernberg" target="_blank" rel="noreferrer">https://www.deutsches-museum.de/nuernberg</a></p>
+            <p>The exhibit is now live at the German Museum in Nuremberg. <a href="https://www.deutsches-museum.de/nuernberg" target="_blank" rel="noreferrer" style={{ "color": "blue", "textDecoration": "underline" }}>https://www.deutsches-museum.de/nuernberg</a></p>
           }
           {work.image &&
             <img src={workpic} alt={work.title}></img>
