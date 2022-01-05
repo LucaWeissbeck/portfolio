@@ -243,7 +243,7 @@ h3,
 h4,
 h5,
 h6 {
-   color: #313131;
+   color: #D3D3D3;
    font-family: 'opensans-bold', sans-serif;
    font-weight: normal;
 }
@@ -454,7 +454,7 @@ a,
 a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: #444;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
