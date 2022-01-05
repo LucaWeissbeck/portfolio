@@ -30,6 +30,7 @@ class Resume extends Component {
 
     const work = this.props.data.work.map(function (work) {
       const workpic = "images/" + work.image;
+      const projectReport = "resources/" + work.projectReport;
       return (
         <div key={work.company} style={{ marginTop: "10%" }}>
           <h3>{work.company}</h3>
@@ -37,6 +38,13 @@ class Resume extends Component {
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>
           </p>
+          {work.projectReport &&
+            <div className="download">
+              <a href={projectReport} className="button" >
+                <i className="fa fa-download"></i> Download Project Report
+              </a>
+            </div>
+          }
           <p>{work.description}</p>
           {work.title === "IBM - IoT Center Munich" &&
             <p>The exhibit is now live at the German Museum in Nuremberg. <a href="https://www.deutsches-museum.de/nuernberg" target="_blank" rel="noreferrer">https://www.deutsches-museum.de/nuernberg</a></p>
