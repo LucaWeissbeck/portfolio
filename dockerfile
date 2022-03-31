@@ -6,6 +6,8 @@ COPY package.json .
 
 COPY . .
 
+RUN npm install
+
 RUN npm run build
 
 FROM nginx:1.21.0-alpine as production

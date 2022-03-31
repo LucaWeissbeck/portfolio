@@ -116,7 +116,7 @@
         "title": "Survey Creation Tool",
         "category": "(offline now) A fighting gear company I started",
         "image": "Results.png",
-        "url": ""
+        "url": "https://github.com/LucaWeissbeck/SurveyWzrd-Frontend"
       },
       {
         "title": "DRK Consulting Project",
@@ -128,7 +128,7 @@
         "title": "Home Automation Dashboard",
         "category": "Website I built for a restaurant I like in Thailand",
         "image": "03.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "url": "https://github.com/LucaWeissbeck/Toskana-Frontend"
       }
     ]
   }
