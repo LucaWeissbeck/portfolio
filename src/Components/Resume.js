@@ -46,6 +46,10 @@ class Resume extends Component {
             </div>
           }
           <p>{work.description}</p>
+          {work.title === "Moovster - Sustainable Mobility Startup" &&
+            <p>Click <a href="https://www.getmoovster.com/" target="_blank" rel="noreferrer" style={{ "color": "blue", "textDecoration": "underline" }}>here</a> to learn more about Moovster!</p>
+
+          }
           {work.title === "IBM - IoT Center Munich" &&
             <p>The exhibit is now live at the German Museum in Nuremberg. <a href="https://www.deutsches-museum.de/nuernberg" target="_blank" rel="noreferrer" style={{ "color": "blue", "textDecoration": "underline" }}>https://www.deutsches-museum.de/nuernberg</a></p>
           }

@@ -39,7 +39,15 @@
         "graduated": "July 2019"
       }
     ],
-    "work": [{
+    "work": [
+      {
+        "company": "Named Entity Extraction on Invoices",
+        "title": "Moovster - Sustainable Mobility Startup",
+        "years": "Feburary 2022 - Present",
+        "description": "Development of Named Entity Recognition Algorithms for extracting entities from customer invoices. Moovster is a startup cooperating closely with IBM while being a spinoff from the BMW Group."
+      },
+
+      {
         "company": "Tech4Justice - Identifying Racial and Gender Bias using NLP",
         "title": "IBM Research - Tech4Justice",
         "years": "August 2021 - November 2021",
