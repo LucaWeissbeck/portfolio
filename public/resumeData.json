@@ -96,6 +96,10 @@
         "level": "70%"
       },
       {
+        "name": "Docker",
+        "level": "70%"
+      },
+      {
         "name": "CSS",
         "level": "60%"
       },
@@ -106,10 +110,6 @@
       {
         "name": "SQL",
         "level": "50%"
-      },
-      {
-        "name": "Docker",
-        "level": "70%"
       }
     ]
   },
