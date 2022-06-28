@@ -14,7 +14,10 @@ FROM nginx:1.21.0-alpine as production
 
 COPY --from=builder /app/build /usr/share/nginx/html
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx/nginx.conf /etc/nginx/conf.d
 
 
+EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]
