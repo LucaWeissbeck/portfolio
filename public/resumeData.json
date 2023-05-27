@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Luca Alexander Weissbeck",
-    "description": "I am a software engineering student at IBM and will have completed my studies in September 2022",
+    "description": "Software Development Engineer at AWS",
     "image": "profilepic.png",
     "bio": "My studies involve recurring internships at my corporate partner IBM. While this might seem uncommon, it is a well known concept in Germany. During my studies a practical work experience phase alternates with a university phase every 3-4 months. Due to my free choice of internship placement I am able to gain insights into different business units and work on real-world client facing projects. ",
     "contactmessage": "Feel free to contact me on the options listed below.",
@@ -39,8 +39,7 @@
         "graduated": "July 2019"
       }
     ],
-    "work": [
-      {
+    "work": [{
         "company": "Named Entity Extraction on Invoices",
         "title": "Moovster - Sustainable Mobility Startup",
         "years": "Feburary 2022 - Present",
