@@ -31,9 +31,13 @@ class Resume extends Component {
     const work = this.props.data.work.map(function (work) {
       const workpic = "images/" + work.image;
       const projectReport = "resources/" + work.projectReport;
+      const companyPic = "images/" + work.companyLogo;
       return (
         <div key={work.company} style={{ marginTop: "10%" }}>
-          <h3>{work.company}</h3>
+          <div className="header-pic">
+            <h3>{work.company}</h3>
+            {work.companyLogo !== undefined && <img src={companyPic} alt="Company Logo"></img>}
+          </div>
           <p className="info">
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>

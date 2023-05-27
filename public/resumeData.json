@@ -40,20 +40,30 @@
       }
     ],
     "work": [{
+        "company": "Amazon Web Services",
+        "companyLogo": "Amazon.png",
+        "title": "Software Development Engineer",
+        "years": "October 2022 - Present",
+        "description": "As a Software Engineer at AWS, I work on two highly scalable, critical internal services within the billing infrastructure. These services are fully AWS native, utilizing the power of AWS to handle scalability, reliability, and performance. I collaborate with a talented team, designing and implementing new features, optimizing existing functionality, and ensuring seamless integration with other components. I stay updated with the latest AWS technologies, contributing to continuous improvement and innovation. My role is vital in supporting AWS 's mission to provide reliable and efficient cloud services."
+      },
+      {
         "company": "Named Entity Extraction on Invoices",
+        "companyLogo": "IBM.png",
         "title": "Moovster - Sustainable Mobility Startup",
-        "years": "Feburary 2022 - Present",
+        "years": "Feburary 2022 - April 2022",
         "description": "Fine Tuning of a multi-modal language Transformer model for extracting predefined entities from customer invoices. The chosen language model, called LayoutXLM, presents the first, state of the art language model combining the visual and spatial modality into one single framework. The developed model was implemented within the Moovster microservice architecture. Moovster is a mobility startup cooperating closely with IBM while being a spinoff from the BMW Group."
       },
 
       {
         "company": "Tech4Justice - Identifying Racial and Gender Bias using NLP",
+        "companyLogo": "IBM.png",
         "title": "IBM Research - Tech4Justice",
         "years": "August 2021 - November 2021",
         "description": "The Tech4Justice department at IBM Hursley deals with technology developed for a greater good of society. During my time at the department I was tasked with finding algorithms that give an answer to the research question; \"Is there too much information given in newspaper articles in context surrounding particular negative events when involving members of a minority group?\". Answers to this question may be found by analysis of racial bias. An elevated amount of hedges, boosters or factive verbs in articles may be one of the many factors portraying such a bias by the newspaper author.\nThe analysis were conducted in Python using a Dataframe containing the article content and other metadata.\n\nTechnology stack: Python, NLTK, Pandas, NumPy, TextBlob, Sci-kit-learn, IBM Cloud, IBM Watson Natural Language Processing, CoreNLP"
       },
       {
         "company": "Development & Deployment GitHub Changelog Application IBM Cloud Code Engine",
+        "companyLogo": "IBM.png",
         "title": "IBM Research - Code Engine",
         "years": "November 2020 - Feburary 2021",
         "description": "IBM Cloud Code Engine presents a recent offering of the IBM Cloud allowing developers to deploy software serverless. The developer solely needs to provide his source code or deployment container while Cloud Code Engine takes care of the rest.\nWe were tasked with the development of an application allowing the user to connect to any of his authorised GitHub repositories and automatically creating changelog messages by utilising the GitHub API in order to establish the differences between each version published on GitHub. \nThe application's API was written in Node.js while the frontend was developed using ReactJS in combination with Typescript as well as IBM's design kit \"Carbon Design\".\n\nTechnology stack: NodeJS, ReactJS, Docker, Cloud Code Engine (IBM Cloud), Typescript, Javascript, HTML, CSS, IBM Carbon Design",
@@ -62,12 +72,14 @@
       },
       {
         "company": "Development of DevOps Creator in AngularJS",
+        "companyLogo": "IBM.png",
         "title": "IBM - BMW Account",
         "years": "May 2021 - August 2021",
         "description": "During my third internship I joined the GBS BMW account located in the IoT center in Munich. My main focus laid on developing a frontend application that can be used to easily build and deploy DevOps solutions in the most efficient manner.  The frontend was developed using the well known web framework Angular in combination with Java Script. Meanwhile the backend made use of the Sequelize ORM integrated into a Node.js backend. Sequelize is an Object-relational mapping framework used to communicate with the database.  Furthermore, I gained insights into the AWS Cloud and was able to achieve the AWS Cloud Practitioner certificate.  Technology stack: AngularJS, Javascript, NodeJS, HTML, CSS, AWS Cloud"
       },
       {
         "company": "Deutsches Museum Showcase - Artificial Intelligence Optimisation for Object Recognition",
+        "companyLogo": "IBM.png",
         "title": "IBM - IoT Center Munich",
         "years": "June 2020 - August 2020",
         "description": "In my second practical experience I was tasked with the optimisation and training of an artificial neural network used for object detection at the German museum in Nuremberg. Training a neural network in Python using MxNet requires the use of Hyperparameters which influence the quality and performance of the network inference heavily. The ongoing COVID - 19 pandemic impeded training the model locally at IBM, resulting in the use of a docker container which was started via an SSH - access to a high - performance computer. Technology stack: Python, MxNet, OpenCV, Docker",
@@ -76,6 +88,7 @@
       },
       {
         "company": "Storage Infrastructure for AI, Autonomous Driving and Data Science",
+        "companyLogo": "IBM.png",
         "title": "IBM Systems Storage",
         "years": "January 2020 - March 2020",
         "description": "Having spent three months at the IBM Systems storage department, I was able to gain a great insight into the software-defined storage but also hardware storage of IBM. The main focus laid on providing the autonomous driving sector with capable storage for AI & Big Data and applications. This specific market needs a strong IT infrastructure in order to run AI simulations faster than realtime, and store the enormous amounts of data collected by the sensors of an autonomous driving vehicle. What makes this challenge interesting, is that not one solution fits all customers but every solution is tailored to the customer's specific needs.",

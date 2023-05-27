@@ -1250,3 +1250,17 @@ footer .social-links li:first-child {
 .github-btn {
    background-color: #34495e !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* i. Custom Stuff 
+/* ------------------------------------------------------------------ */
+.header-pic {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-pic img {
+   max-width: 10%;
+}

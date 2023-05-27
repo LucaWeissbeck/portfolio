@@ -511,4 +511,9 @@
       margin-left: 14px;
    }
 
+   /* Custom Stuff
+   ------------------------------------------------------------------------ */
+   .header-pic {
+      flex-direction: column;
+   }
 }
