@@ -2,15 +2,15 @@
   "main": {
     "name": "Luca Alexander Weissbeck",
     "description": "Software Development Engineer at AWS",
-    "image": "profilepic.png",
-    "bio": "My studies involve recurring internships at my corporate partner IBM. While this might seem uncommon, it is a well known concept in Germany. During my studies a practical work experience phase alternates with a university phase every 3-4 months. Due to my free choice of internship placement I am able to gain insights into different business units and work on real-world client facing projects. ",
-    "contactmessage": "Feel free to contact me on the options listed below.",
+    "image": "profilepic2.jpeg",
+    "bio": "Hi I'm Luca and I am currently working as a Software Engineer at Amazon Web Services in Berlin, Germany. ",
+    "contactmessage": "Feel free to contact me on any of the options listed below.",
     "email": "lucaweissbeck@yahoo.de",
     "phone": "+49 151 46377803",
     "github": "https://github.com/LucaWeissbeck",
     "project": "https://github.com/nordicgiant2/react-nice-resume",
     "address": {
-      "city": "Stuttgart, Germany"
+      "city": "Berlin, Germany"
     },
     "website": "http://www.timbakerdev.com",
     "resumedownload": "Website_CV.pdf",
@@ -31,7 +31,7 @@
     "education": [{
         "school": "DHBW Stuttgart",
         "degree": "Bsc. International Management for Business and Information Technology",
-        "graduated": "Ongoing"
+        "graduated": "September 2023"
       },
       {
         "school": "German School London",
