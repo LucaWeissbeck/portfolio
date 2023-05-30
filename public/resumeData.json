@@ -51,9 +51,9 @@
         "companyLogo": "IBM.png",
         "title": "Moovster - Sustainable Mobility Startup",
         "years": "Feburary 2022 - April 2022",
-        "description": "Fine Tuning of a multi-modal language Transformer model for extracting predefined entities from customer invoices. The chosen language model, called LayoutXLM, presents the first, state of the art language model combining the visual and spatial modality into one single framework. The developed model was implemented within the Moovster microservice architecture. Moovster is a mobility startup cooperating closely with IBM while being a spinoff from the BMW Group."
+        "description": "Fine Tuning of a multi-modal language Transformer model for extracting predefined entities from customer invoices. The chosen language model, called LayoutXLM, presents the first, state of the art language model combining the visual and spatial modality into one single framework. The developed model was implemented within the Moovster microservice architecture. Moovster is a mobility startup cooperating closely with IBM while being a spinoff from the BMW Group.",
+        "protectedProjectReport": "BachelorThesis.pdf"
       },
-
       {
         "company": "Tech4Justice - Identifying Racial and Gender Bias using NLP",
         "companyLogo": "IBM.png",

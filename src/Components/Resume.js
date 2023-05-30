@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import PasswordPopup from "./Modal";
+import Modal from "./Modal";
 
 class Resume extends Component {
   getRandomColor() {
@@ -10,6 +12,21 @@ class Resume extends Component {
     }
     return color;
   }
+
+  // Modal Stuff
+  constructor(props) {
+    super(props);
+    this.state = {
+      isModalOpen: false
+    }
+
+    this.handleToggleModal = this.handleToggleModal.bind(this);
+  }
+
+  handleToggleModal = (event) => {
+    this.setState({ isModalOpen: this.state.isModalOpen === true ? false : true });
+  };
+
 
   render() {
     if (!this.props.data) return null;
@@ -28,10 +45,12 @@ class Resume extends Component {
       );
     });
 
-    const work = this.props.data.work.map(function (work) {
+
+    const work = this.props.data.work.map((work) => {
       const workpic = "images/" + work.image;
       const projectReport = "resources/" + work.projectReport;
       const companyPic = "images/" + work.companyLogo;
+
       return (
         <div key={work.company} style={{ marginTop: "10%" }}>
           <div className="header-pic">
@@ -47,6 +66,15 @@ class Resume extends Component {
               <a href={projectReport} className="button" >
                 <i className="fa fa-download"></i> Download Project Report
               </a>
+            </div>
+          }
+          {work.protectedProjectReport &&
+            <div className="download">
+              <button className="button" onClick={this.handleToggleModal} >
+                <i className="fa fa-download"></i> Download Bachelor Thesis
+              </button>
+
+              {this.state.isModalOpen && <PasswordPopup objectKey="BachelorThesis.pdf"></PasswordPopup>}
             </div>
           }
           <p>{work.description}</p>
