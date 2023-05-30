@@ -13,8 +13,6 @@ const PasswordPopup = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
-        console.log('Password:', password);
         if (password.length > 0) {
             apiHook.generatePresignedURL(props.objectKey, password).then((res) => {
                 console.log(res)
