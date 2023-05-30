@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
 import PasswordPopup from "./Modal";
-import Modal from "./Modal";
 
 class Resume extends Component {
   getRandomColor() {
