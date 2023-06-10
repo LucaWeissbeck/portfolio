@@ -4,7 +4,6 @@ import { GeneratePresignedURL } from '../services/generatePresignedURL';
 const PasswordPopup = (props) => {
     const apiHook = new GeneratePresignedURL()
     const [password, setPassword] = useState('');
-    const [showPopup, setShowPopup] = useState(true);
     const [presignedURL, setPresignedURL] = useState(null);
     const [responseMessage, setResponseMessage] = useState("")
     const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +29,7 @@ const PasswordPopup = (props) => {
                     setResponseMessage(res?.message);
                 }
             }).catch((err) => {
-                setResponseMessage(err)
+                setResponseMessage(err + "Please try again.")
             }).finally(() => {
                 setIsLoading(false);
             })
@@ -44,23 +43,21 @@ const PasswordPopup = (props) => {
 
     return (
         <div>
-            {showPopup && (
-                <div className="popup">
-                    <form onSubmit={handleSubmit}>
-                        <label>
-                            Password:
-                            <input type="password" value={password} onChange={handlePasswordChange} />
-                        </label>
-                        <button type="submit">Submit</button>
-                    </form>
-                    {isLoading &&
-                        <p>Loading, please wait...</p>}
-                    {presignedURL &&
-                        <p>Success! <a style={{ color: "blue" }} href={presignedURL} target="_blank" rel="noreferrer"> Click here to view. </a></p>
-                    }
-                    <p style={{ color: "red" }}>{responseMessage}</p>
-                </div>
-            )}
+            <div className="popup">
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        Password:
+                        <input type="password" value={password} onChange={handlePasswordChange} />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                {isLoading &&
+                    <p>Loading, please wait...</p>}
+                {presignedURL &&
+                    <p>Success! <a style={{ color: "blue" }} href={presignedURL} target="_blank" rel="noreferrer"> Click here to view. </a></p>
+                }
+                <p style={{ color: "red" }}>{responseMessage}</p>
+            </div>
         </div>
     );
 
