@@ -5,7 +5,9 @@ const PasswordPopup = (props) => {
     const apiHook = new GeneratePresignedURL()
     const [password, setPassword] = useState('');
     const [showPopup, setShowPopup] = useState(true);
+    const [presignedURL, setPresignedURL] = useState(null);
     const [responseMessage, setResponseMessage] = useState("")
+    const [isLoading, setIsLoading] = useState(false);
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
@@ -13,19 +15,27 @@ const PasswordPopup = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setPresignedURL(null);
+        setIsLoading(true);
+        setResponseMessage("");
         if (password.length > 0) {
             apiHook.generatePresignedURL(props.objectKey, password).then((res) => {
-                console.log(res)
-                if (res.includes("s3")) {
-                    window.open(res)
-                    setShowPopup(false); // Hide the popup after submitting
+                try {
+                    if (res.includes("s3")) {
+                        setPresignedURL(res);
+                    } else {
+                        setResponseMessage(res);
+                    }
+                } catch (err) {
+                    setResponseMessage(res?.message);
                 }
-                setResponseMessage(res)
             }).catch((err) => {
                 setResponseMessage(err)
+            }).finally(() => {
+                setIsLoading(false);
             })
         } else {
-            setResponseMessage("No password was entered.")
+            setResponseMessage("No password was entered.");
         }
 
     };
@@ -43,6 +53,11 @@ const PasswordPopup = (props) => {
                         </label>
                         <button type="submit">Submit</button>
                     </form>
+                    {isLoading &&
+                        <p>Loading, please wait...</p>}
+                    {presignedURL &&
+                        <p>Success! <a style={{ color: "blue" }} href={presignedURL} target="_blank" rel="noreferrer"> Click here to view. </a></p>
+                    }
                     <p style={{ color: "red" }}>{responseMessage}</p>
                 </div>
             )}
