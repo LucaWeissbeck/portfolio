@@ -1,5 +1,14 @@
 import axios from 'axios';
+import axiosRetry from 'axios-retry'
 import { APICall } from './APICall.js';
+
+axiosRetry(axios, {
+    retries: 5,
+    retryDelay: axiosRetry.exponentialDelay,
+    retryCondition: (error) => {
+        return error.response.status >= 500
+    }
+});
 
 export class GeneratePresignedURL extends APICall {
     constructor() {

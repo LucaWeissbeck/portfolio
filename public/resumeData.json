@@ -14,7 +14,8 @@
     },
     "website": "http://www.timbakerdev.com",
     "resumedownload": "Website_CV.pdf",
-    "social": [{
+    "social": [
+      {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/luca-weissbeck/",
         "className": "fa fa-linkedin"
@@ -28,7 +29,8 @@
   },
   "resume": {
     "skillmessage": "These include some of my skills I have acquired through my internships but also out of my pivate interest.",
-    "education": [{
+    "education": [
+      {
         "school": "DHBW Stuttgart",
         "degree": "Bsc. International Management for Business and Information Technology",
         "graduated": "September 2023"
@@ -39,12 +41,13 @@
         "graduated": "July 2019"
       }
     ],
-    "work": [{
+    "work": [
+      {
         "company": "Amazon Web Services",
         "companyLogo": "Amazon.png",
         "title": "Software Development Engineer",
         "years": "October 2022 - Present",
-        "description": "As a Software Engineer at AWS, I work on two highly scalable, critical internal services within the billing infrastructure. These services are fully AWS native, utilizing the power of AWS to handle scalability, reliability, and performance. I collaborate with a talented team, designing and implementing new features, optimizing existing functionality, and ensuring seamless integration with other components. I stay updated with the latest AWS technologies, contributing to continuous improvement and innovation. My role is vital in supporting AWS 's mission to provide reliable and efficient cloud services."
+        "description": "As a Software Engineer at AWS, I work on highly scalable, criticals services within the billing infrastructure. These services are fully AWS native, utilizing the power of AWS to handle scalability, reliability, and performance. I collaborate with a talented team, designing and implementing new features, optimizing existing functionality, and ensuring seamless integration with other components. I stay updated with the latest AWS technologies, contributing to continuous improvement and innovation. My role is vital in supporting AWS 's mission to provide reliable and efficient cloud services."
       },
       {
         "company": "Named Entity Extraction on Invoices",
@@ -95,7 +98,8 @@
         "last": "True"
       }
     ],
-    "skills": [{
+    "skills": [
+      {
         "name": "Python",
         "level": "80%"
       },
@@ -126,7 +130,8 @@
     ]
   },
   "portfolio": {
-    "projects": [{
+    "projects": [
+      {
         "title": "PyBroker",
         "category": "My Travel Blog for my post-university travels",
         "image": "PyBrokerMainDark.png",
