@@ -4,7 +4,10 @@ import { APICall } from './APICall.js';
 
 axiosRetry(axios, {
     retries: 5,
-    retryDelay: axiosRetry.exponentialDelay,
+    retryDelay: (retryCount) => {
+        console.log(`retry attempt: ${retryCount}`);
+        return retryCount * 2000; // time interval between retries
+    },
     retryCondition: (error) => {
         return error.response.status >= 500
     }
