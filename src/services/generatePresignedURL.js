@@ -9,7 +9,9 @@ axiosRetry(axios, {
         return retryCount * 2000; // time interval between retries
     },
     retryCondition: (error) => {
-        return error.response.status >= 500
+        // Retry on network errors and 5xx server responses
+        return axiosRetry.isNetworkError(error) ||
+            (error.response && error.response.status >= 500);
     }
 });
 
@@ -25,20 +27,15 @@ export class GeneratePresignedURL extends APICall {
     }
 
     async generatePresignedURL(objectKey, secret) {
-        const data = { "objectKey": objectKey, "secret": secret };
         try {
+            const data = { "objectKey": objectKey, "secret": secret };
             const response = await axios.post(this.api_path, data);
-            // The secret was correct and S3 Presigned URL is returned
             return response.data;
-
         } catch (error) {
-            // Handle the error
-            console.error(error.response.data);
-            return error.response.data;
+            console.error("Error in generatePresignedURL:", error);
+            throw error;
         }
+
+
     }
-
-
 }
-
-
